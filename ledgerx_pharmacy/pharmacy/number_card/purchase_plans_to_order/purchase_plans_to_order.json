@@ -1,0 +1,20 @@
+{
+ "creation": "2026-11-21 09:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Pharmacy Purchase Plan",
+ "filters_json": "[[\"Pharmacy Purchase Plan\", \"status\", \"=\", \"Loaded\"]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Purchase Plans to Order",
+ "modified": "2026-11-21 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Purchase Plans to Order",
+ "owner": "Administrator",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

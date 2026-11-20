@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "include",
+  "item_code",
+  "item_name",
+  "supplier",
+  "stock",
+  "on_order",
+  "daily_sales",
+  "order_qty",
+  "bonus_qty",
+  "unit_cost",
+  "amount",
+  "offer",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "include",
+   "fieldtype": "Check",
+   "label": "Order",
+   "default": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Float",
+   "label": "Stock",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "on_order",
+   "fieldtype": "Float",
+   "label": "On Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_sales",
+   "fieldtype": "Float",
+   "label": "Sold per Day",
+   "read_only": 1,
+   "precision": "3"
+  },
+  {
+   "fieldname": "order_qty",
+   "fieldtype": "Float",
+   "label": "Order Quantity",
+   "in_list_view": 1,
+   "description": "Units received, free units included."
+  },
+  {
+   "fieldname": "bonus_qty",
+   "fieldtype": "Float",
+   "label": "Free Units",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unit_cost",
+   "fieldtype": "Currency",
+   "label": "Cost per Unit Received",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "offer",
+   "fieldtype": "Link",
+   "label": "Offer Used",
+   "options": "Supplier Offer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Purchase Plan Row",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [],
+ "istable": 1,
+ "allow_rename": 0
+}

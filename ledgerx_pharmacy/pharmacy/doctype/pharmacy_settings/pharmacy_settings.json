@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "public_price_list",
+  "walk_in_customer",
+  "sales_taxes_template",
+  "sb_exp",
+  "critical_expiry_days",
+  "near_expiry_days",
+  "min_days_to_sell",
+  "sb_ctrl",
+  "controlled_needs_prescription",
+  "sb_buy",
+  "cover_days",
+  "sales_lookback_days",
+  "sb_ref",
+  "refill_lead_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "public_price_list",
+   "fieldtype": "Link",
+   "label": "Public Price List",
+   "options": "Price List",
+   "description": "Official public prices live here. The price typed on an item is kept in this list."
+  },
+  {
+   "fieldname": "walk_in_customer",
+   "fieldtype": "Link",
+   "label": "Walk-in Customer",
+   "options": "Customer",
+   "description": "Used when a sale has no patient."
+  },
+  {
+   "fieldname": "sales_taxes_template",
+   "fieldtype": "Link",
+   "label": "Sales Taxes Template",
+   "options": "Sales Taxes and Charges Template",
+   "description": "Leave empty when medicines are exempt."
+  },
+  {
+   "fieldname": "sb_exp",
+   "fieldtype": "Section Break",
+   "label": "Expiry"
+  },
+  {
+   "fieldname": "critical_expiry_days",
+   "fieldtype": "Int",
+   "label": "Critical Expiry (days)",
+   "default": 30
+  },
+  {
+   "fieldname": "near_expiry_days",
+   "fieldtype": "Int",
+   "label": "Near Expiry (days)",
+   "default": 90
+  },
+  {
+   "fieldname": "min_days_to_sell",
+   "fieldtype": "Int",
+   "label": "Do Not Sell With Fewer Days Left Than",
+   "default": 0,
+   "description": "0 = only expired batches are blocked."
+  },
+  {
+   "fieldname": "sb_ctrl",
+   "fieldtype": "Section Break",
+   "label": "Controlled Drugs"
+  },
+  {
+   "fieldname": "controlled_needs_prescription",
+   "fieldtype": "Check",
+   "label": "Controlled Drugs Need a Prescription Number, Doctor and Patient ID",
+   "default": 1
+  },
+  {
+   "fieldname": "sb_buy",
+   "fieldtype": "Section Break",
+   "label": "Purchasing"
+  },
+  {
+   "fieldname": "cover_days",
+   "fieldtype": "Int",
+   "label": "Days of Sales to Keep in Stock",
+   "default": 14
+  },
+  {
+   "fieldname": "sales_lookback_days",
+   "fieldtype": "Int",
+   "label": "Days of Sales History to Use",
+   "default": 60
+  },
+  {
+   "fieldname": "sb_ref",
+   "fieldtype": "Section Break",
+   "label": "Chronic Patients"
+  },
+  {
+   "fieldname": "refill_lead_days",
+   "fieldtype": "Int",
+   "label": "Remind This Many Days Before a Refill Is Due",
+   "default": 3
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Pharmacy Settings",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Pharmacy Buyer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "icon": "fa fa-medkit",
+ "issingle": 1,
+ "allow_rename": 0
+}

@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "branch",
+  "item_code",
+  "item_name",
+  "batch_no",
+  "qty",
+  "cb1",
+  "customer",
+  "patient_id",
+  "doctor",
+  "prescription_no",
+  "sb2",
+  "sales_invoice",
+  "cancelled",
+  "balance_after"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Pharmacy Branch",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Quantity",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_id",
+   "fieldtype": "Data",
+   "label": "Patient National ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Data",
+   "label": "Doctor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prescription_no",
+   "fieldtype": "Data",
+   "label": "Prescription No.",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "sb2",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cancelled",
+   "fieldtype": "Check",
+   "label": "Cancelled",
+   "read_only": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "balance_after",
+   "fieldtype": "Float",
+   "label": "Branch Balance After",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Controlled Drug Log",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:CDL-.YYYY.-.#####",
+ "icon": "fa fa-lock",
+ "allow_rename": 0
+}

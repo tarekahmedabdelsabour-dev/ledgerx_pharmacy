@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "receiving_branch",
+  "posting_date",
+  "cb1",
+  "cover_days",
+  "lookback_days",
+  "sb_br",
+  "branches",
+  "sb_rows",
+  "rows",
+  "sb_res",
+  "status",
+  "total_amount",
+  "orders_made",
+  "notes_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "receiving_branch",
+   "fieldtype": "Link",
+   "label": "Deliver To",
+   "options": "Pharmacy Branch",
+   "reqd": 1,
+   "description": "Usually the central store."
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cover_days",
+   "fieldtype": "Int",
+   "label": "Days of Sales to Keep"
+  },
+  {
+   "fieldname": "lookback_days",
+   "fieldtype": "Int",
+   "label": "Days of Sales History"
+  },
+  {
+   "fieldname": "sb_br",
+   "fieldtype": "Section Break",
+   "label": "Branches Counted"
+  },
+  {
+   "fieldname": "branches",
+   "fieldtype": "Table",
+   "label": "Branches",
+   "options": "Plan Branch",
+   "description": "Stock and sales of these branches (and the receiving store) are counted together. Empty = every active branch."
+  },
+  {
+   "fieldname": "sb_rows",
+   "fieldtype": "Section Break",
+   "label": "Needs"
+  },
+  {
+   "fieldname": "rows",
+   "fieldtype": "Table",
+   "label": "Needs",
+   "options": "Purchase Plan Row"
+  },
+  {
+   "fieldname": "sb_res",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nLoaded\nOrdered",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "orders_made",
+   "fieldtype": "Small Text",
+   "label": "Purchase Orders Created",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes_html",
+   "fieldtype": "Text Editor",
+   "label": "Notes",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Pharmacy Purchase Plan",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Pharmacy Buyer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:PPP-.YYYY.-.#####",
+ "icon": "fa fa-shopping-cart",
+ "track_changes": 1,
+ "allow_rename": 0
+}

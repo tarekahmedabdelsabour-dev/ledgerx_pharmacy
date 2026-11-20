@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "item_code",
+  "item_name",
+  "qty",
+  "every_days",
+  "cb1",
+  "branch",
+  "start_date",
+  "last_dispensed",
+  "next_due",
+  "status",
+  "stopped",
+  "last_reminded",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Customer",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Medicine",
+   "options": "Item",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1,
+   "fetch_from": "item_code.item_name"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Quantity per Refill",
+   "default": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "every_days",
+   "fieldtype": "Int",
+   "label": "Every (days)",
+   "default": 30,
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Usual Branch",
+   "options": "Pharmacy Branch"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "default": "Today"
+  },
+  {
+   "fieldname": "last_dispensed",
+   "fieldtype": "Date",
+   "label": "Last Dispensed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "next_due",
+   "fieldtype": "Date",
+   "label": "Next Refill Due",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Not Started\nUpcoming\nDue Soon\nOverdue\nStopped",
+   "default": "Not Started",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "stopped",
+   "fieldtype": "Check",
+   "label": "Stopped"
+  },
+  {
+   "fieldname": "last_reminded",
+   "fieldtype": "Date",
+   "label": "Last Reminded",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Refill Plan",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Pharmacy Assistant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:RFL-.#####",
+ "title_field": "customer",
+ "icon": "fa fa-refresh",
+ "track_changes": 1,
+ "allow_rename": 0
+}

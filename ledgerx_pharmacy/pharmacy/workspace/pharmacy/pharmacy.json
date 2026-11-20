@@ -1,0 +1,433 @@
+{
+ "charts": [
+  {
+   "chart_name": "Sales by Branch",
+   "label": "Sales by Branch"
+  },
+  {
+   "chart_name": "Refill Plans by Status",
+   "label": "Refill Plans by Status"
+  }
+ ],
+ "content": "[{\"id\": \"f11fa616a5\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Pharmacy</b></span>\", \"col\": 12}}, {\"id\": \"e6874ff7e4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pharmacy Dispense\", \"col\": 3}}, {\"id\": \"69c5136dae\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pharmacy Transfer\", \"col\": 3}}, {\"id\": \"a561b15834\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pharmacy Purchase Plan\", \"col\": 3}}, {\"id\": \"5f854fb624\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Refill Plan\", \"col\": 3}}, {\"id\": \"1a77dc8305\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Sales Today\", \"col\": 3}}, {\"id\": \"bd2b7577d9\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Refills Overdue\", \"col\": 3}}, {\"id\": \"bda66150a3\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Refills Due Soon\", \"col\": 3}}, {\"id\": \"24321586a8\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Transfers to Submit\", \"col\": 3}}, {\"id\": \"b3197d6337\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Purchase Plans to Order\", \"col\": 3}}, {\"id\": \"b772fe7558\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Controlled Drug Entries This Month\", \"col\": 3}}, {\"id\": \"350d6959ae\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Sales by Branch\", \"col\": 6}}, {\"id\": \"a589361465\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Refill Plans by Status\", \"col\": 6}}, {\"id\": \"938ddecf9c\", \"type\": \"card\", \"data\": {\"card_name\": \"Daily Work\", \"col\": 4}}, {\"id\": \"9e5c4075aa\", \"type\": \"card\", \"data\": {\"card_name\": \"Purchasing\", \"col\": 4}}, {\"id\": \"668cc72bb0\", \"type\": \"card\", \"data\": {\"card_name\": \"Insurance\", \"col\": 4}}, {\"id\": \"4ce411e95f\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"9a9eba9123\", \"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}, {\"id\": \"6cf2400abb\", \"type\": \"card\", \"data\": {\"card_name\": \"Source Data\", \"col\": 4}}]",
+ "creation": "2026-11-21 09:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "pill",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "Pharmacy",
+ "links": [
+  {
+   "type": "Card Break",
+   "label": "Daily Work",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 3,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Pharmacy Dispense",
+   "link_type": "DocType",
+   "link_to": "Pharmacy Dispense",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Pharmacy Transfer",
+   "link_type": "DocType",
+   "link_to": "Pharmacy Transfer",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Refill Plan",
+   "link_type": "DocType",
+   "link_to": "Refill Plan",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Purchasing",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 4,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Pharmacy Purchase Plan",
+   "link_type": "DocType",
+   "link_to": "Pharmacy Purchase Plan",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Supplier Offer",
+   "link_type": "DocType",
+   "link_to": "Supplier Offer",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Purchase Order",
+   "link_type": "DocType",
+   "link_to": "Purchase Order",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Purchase Receipt",
+   "link_type": "DocType",
+   "link_to": "Purchase Receipt",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Insurance",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 2,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Insurance Company",
+   "link_type": "DocType",
+   "link_to": "Insurance Company",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Insurance Plan",
+   "link_type": "DocType",
+   "link_to": "Insurance Plan",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Reports",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 7,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Expiry Report",
+   "link_type": "Report",
+   "link_to": "Expiry Report",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Drug Alternatives",
+   "link_type": "Report",
+   "link_to": "Drug Alternatives",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Branch Performance",
+   "link_type": "Report",
+   "link_to": "Branch Performance",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Controlled Drug Register",
+   "link_type": "Report",
+   "link_to": "Controlled Drug Register",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Insurance Receivable",
+   "link_type": "Report",
+   "link_to": "Insurance Receivable",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Refills Due",
+   "link_type": "Report",
+   "link_to": "Refills Due",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Controlled Drug Log",
+   "link_type": "DocType",
+   "link_to": "Controlled Drug Log",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Setup",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 3,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Pharmacy Branch",
+   "link_type": "DocType",
+   "link_to": "Pharmacy Branch",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Pharmacy Settings",
+   "link_type": "DocType",
+   "link_to": "Pharmacy Settings",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Active Ingredient",
+   "link_type": "DocType",
+   "link_to": "Active Ingredient",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Source Data",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 8,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Item",
+   "link_type": "DocType",
+   "link_to": "Item",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Batch",
+   "link_type": "DocType",
+   "link_to": "Batch",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Customer",
+   "link_type": "DocType",
+   "link_to": "Customer",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Supplier",
+   "link_type": "DocType",
+   "link_to": "Supplier",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Warehouse",
+   "link_type": "DocType",
+   "link_to": "Warehouse",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Stock Entry",
+   "link_type": "DocType",
+   "link_to": "Stock Entry",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Sales Invoice",
+   "link_type": "DocType",
+   "link_to": "Sales Invoice",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Price List",
+   "link_type": "DocType",
+   "link_to": "Price List",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  }
+ ],
+ "title": "Pharmacy",
+ "modified": "2026-11-21 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Pharmacy",
+ "number_cards": [
+  {
+   "label": "Sales Today",
+   "number_card_name": "Sales Today"
+  },
+  {
+   "label": "Refills Overdue",
+   "number_card_name": "Refills Overdue"
+  },
+  {
+   "label": "Refills Due Soon",
+   "number_card_name": "Refills Due Soon"
+  },
+  {
+   "label": "Transfers to Submit",
+   "number_card_name": "Transfers to Submit"
+  },
+  {
+   "label": "Purchase Plans to Order",
+   "number_card_name": "Purchase Plans to Order"
+  },
+  {
+   "label": "Controlled Drug Entries This Month",
+   "number_card_name": "Controlled Drug Entries This Month"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "label": "Pharmacy Dispense",
+   "link_to": "Pharmacy Dispense",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Pharmacy Transfer",
+   "link_to": "Pharmacy Transfer",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Pharmacy Purchase Plan",
+   "link_to": "Pharmacy Purchase Plan",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Refill Plan",
+   "link_to": "Refill Plan",
+   "type": "DocType",
+   "doc_view": "List"
+  }
+ ]
+}

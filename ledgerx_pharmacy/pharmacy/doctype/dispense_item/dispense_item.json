@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "uom",
+  "conversion_factor",
+  "qty",
+  "price",
+  "discount_pct",
+  "amount",
+  "covered",
+  "klass",
+  "is_controlled",
+  "batches"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "Units in Stock Unit",
+   "default": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Quantity",
+   "reqd": 1,
+   "default": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Public Price",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "discount_pct",
+   "fieldtype": "Percent",
+   "label": "Discount %"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "covered",
+   "fieldtype": "Check",
+   "label": "Covered by Insurance",
+   "default": 1
+  },
+  {
+   "fieldname": "klass",
+   "fieldtype": "Data",
+   "label": "Class",
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_controlled",
+   "fieldtype": "Check",
+   "label": "Controlled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "batches",
+   "fieldtype": "Small Text",
+   "label": "Batches Used",
+   "read_only": 1,
+   "description": "Chosen by first-expiry-first-out when the sale is submitted."
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Dispense Item",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [],
+ "istable": 1,
+ "allow_rename": 0
+}

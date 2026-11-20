@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "insurance_company",
+  "plan_name",
+  "cover_pct",
+  "patient_cap",
+  "min_copay",
+  "exclude_cosmetics",
+  "valid_to",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "insurance_company",
+   "fieldtype": "Link",
+   "label": "Insurance Company",
+   "options": "Insurance Company",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cover_pct",
+   "fieldtype": "Percent",
+   "label": "Insurer Pays %",
+   "reqd": 1,
+   "default": 80,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "patient_cap",
+   "fieldtype": "Currency",
+   "label": "Most the Patient Pays per Visit",
+   "description": "0 = no cap."
+  },
+  {
+   "fieldname": "min_copay",
+   "fieldtype": "Currency",
+   "label": "Least the Patient Pays per Visit",
+   "description": "A flat fee taken from every covered visit."
+  },
+  {
+   "fieldname": "exclude_cosmetics",
+   "fieldtype": "Check",
+   "label": "Cosmetics and Supplements Not Covered",
+   "default": 1
+  },
+  {
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "label": "Valid Until"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": 1,
+   "in_list_view": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Insurance Plan",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Pharmacy Assistant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Pharmacy Buyer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:{insurance_company}-{plan_name}",
+ "title_field": "plan_name",
+ "icon": "fa fa-id-card-o",
+ "track_changes": 1,
+ "allow_rename": 0
+}

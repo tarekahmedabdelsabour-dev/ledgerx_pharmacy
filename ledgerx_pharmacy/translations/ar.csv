@@ -1,0 +1,325 @@
+... get 1 free.,... يحصل على وحدة مجانية.
+0 - 30 days,0 - 30 يوم
+0 = no cap.,0 = بدون حد أقصى.
+0 = only expired batches are blocked.,0 = الممنوع بيع التشغيلات المنتهية فقط.
+0 = the item's last purchase price.,0 = آخر سعر شراء للصنف.
+31 - 60 days,31 - 60 يوم
+61 - 90 days,61 - 90 يوم
+A flat fee taken from every covered visit.,مبلغ ثابت يدفعه المريض في كل زيارة مغطاة.
+Accounting,المحاسبة
+Active,نشط
+Active Ingredient,المادة الفعالة
+Add at least one item,أضف صنفاً واحداً على الأقل
+Address,العنوان
+Also include batches expiring within (days),أضف كمان التشغيلات اللي هتنتهي خلال (يوم)
+Amended From,معدّل من
+Amount,المبلغ
+Amounts cannot be negative,المبالغ لا يمكن أن تكون بالسالب
+Approval No.,رقم الموافقة
+As of,حتى تاريخ
+Average Invoice,متوسط الفاتورة
+Balance After,الرصيد بعد
+Batch,دفعة
+Batches Used,التشغيلات المستخدمة
+Both branches must belong to the same company,الفرعين لازم يتبعوا نفس الشركة
+Branch,الفرع
+Branch Balance After,رصيد الفرع بعد
+Branch Manager,مدير الفرع
+Branch Name,اسم الفرع
+Branch Performance,أداء الفروع
+Branch Transfer,تحويل بين الفروع
+Branch {0} is not active,الفرع {0} غير نشط
+Branches,الفروع
+Branches Counted,الفروع المحسوبة
+Cancelled,ملغي
+Capsule,كبسولات
+Central Store,المخزن المركزي
+Charged to Insurers,المحمّل على شركات التأمين
+Cheapest offer,أرخص عرض
+"Choose an item that has an active ingredient, or choose the active ingredient",اختار صنف له مادة فعالة، أو اختار المادة الفعالة
+Choose the dates,اختار التواريخ
+Choose the patient or set a walk-in customer in Pharmacy Settings,اختار المريض أو حدد عميل نقدي في إعدادات الصيدلية
+Choose the receiving branch,اختار الفرع المستلم
+Chosen by first-expiry-first-out when the sale is submitted.,بتتحدد بنظام الأقرب انتهاءً أولاً عند اعتماد البيع.
+Chronic Conditions / Allergies,الأمراض المزمنة / الحساسية
+Chronic Patients,المرضى المزمنون
+Class,الفئة
+Company,الشركة
+Contact,جهة الاتصال
+Controlled,مراقب
+Controlled Drug Entries This Month,حركات المخدرات هذا الشهر
+Controlled Drug Log,سجل المخدرات
+Controlled Drug Register,دفتر المخدرات
+Controlled Drugs,الأدوية المراقبة
+"Controlled Drugs Need a Prescription Number, Doctor and Patient ID",الأدوية المراقبة تحتاج رقم الروشتة والطبيب والرقم القومي للمريض
+Controlled drugs ({0}) need: {1}. Fill them in the Pharmacy section of the invoice.,الأدوية المراقبة ({0}) تحتاج: {1}. املأها في قسم الصيدلية بالفاتورة.
+Controlled drugs need: {0},الأدوية المراقبة تحتاج: {0}
+Cosmetic,تجميل
+Cosmetics and Supplements Not Covered,مستحضرات التجميل والمكملات غير مغطاة
+Cost Center,مركز التكلفة
+Cost at Risk,التكلفة المعرضة للخسارة
+Cost of Goods,تكلفة البضاعة
+Cost of the listed stock: {0},تكلفة المخزون المعروض: {0}
+Cost per Unit Received,التكلفة للوحدة المستلمة
+Counting stock and sales...,جاري حساب المخزون والمبيعات...
+Covered by Insurance,مغطى بالتأمين
+Cream,كريم
+Create,إنشاء
+Create Purchase Orders,إنشاء أوامر الشراء
+"Create a customer group and a territory first, or choose the customer account yourself",أنشئ مجموعة عملاء ومنطقة أولاً، أو اختار حساب العميل بنفسك
+Create one draft purchase order per supplier for the ticked rows?,إنشاء أمر شراء مسودة لكل مورد للصفوف المحددة؟
+Critical,حرج
+Critical Expiry (days),صلاحية حرجة (يوم)
+Customer,العميل
+Customer Account,حساب العميل
+Daily Work,الأعمال اليومية
+Date,التاريخ
+Days Left,الأيام المتبقية
+Days of Sales History,أيام تاريخ المبيعات
+Days of Sales History to Use,أيام تاريخ المبيعات المستخدمة
+Days of Sales to Keep,أيام المبيعات المطلوب تغطيتها
+Days of Sales to Keep in Stock,أيام المبيعات المطلوب الاحتفاظ بها في المخزون
+Deliver To,التسليم إلى
+Details,التفاصيل
+Discount %,نسبة الخصم
+Discount % must be between 0 and 100,نسبة الخصم لازم تكون بين 0 و 100
+Dispense Item,صنف مصروف
+Do Not Sell With Fewer Days Left Than,لا تبيع لو المتبقي أقل من (يوم)
+Doctor,الطبيب
+Dosage Form,الشكل الدوائي
+Draft,مسودة
+Drops,قطرة
+Drug Alternatives,بدائل الدواء
+Due Soon,مستحق قريباً
+Every (days),كل (أيام)
+Every (days) must be more than zero,كل (يوم) لازم تكون أكبر من صفر
+Example: 500 mg,مثال: 500 مجم
+Example: buy 10 ...,مثال: اشترِ 10 ...
+Expired,منتهي
+Expired / Quarantine Warehouse,مخزن المنتهي / الحجر
+Expired Batches,التشغيلات المنتهية
+Expiry,الصلاحية
+Expiry Report,تقرير الصلاحية
+"Fill both 'For Every' and 'Get Free', or leave both empty",املأ الاتنين (لكل / مجاني) أو سيبهم فاضيين
+Fill from Expired Batches,تعبئة من التشغيلات المنتهية
+Fill from What the Branch Needs,تعبئة من احتياج الفرع
+For Every (units bought),لكل (وحدات مشتراة)
+Form,الشكل
+Free Units,وحدات مجانية
+From,من
+From Branch,من فرع
+From pharmacy purchase plan {0},من خطة شراء الصيدلية {0}
+Gel,جل
+Get Free (units),يحصل مجاناً (وحدات)
+Get Items,جلب الأصناف
+Home,الرئيسية
+In Stock,بالمخزن
+Inhaler,بخاخ استنشاق
+Injection,حقن
+Insufficient Stock,المخزون غير كافي
+Insurance,التأمين
+Insurance Company,شركة التأمين
+Insurance Member No.,رقم عضوية التأمين
+Insurance Plan,خطة التأمين
+Insurance Receivable,مديونية التأمين
+Insurance company {0} is not active,شركة التأمين {0} غير نشطة
+Insurance plan {0} expired on {1},خطة التأمين {0} انتهت في {1}
+Insurance plan {0} is not active,خطة التأمين {0} غير نشطة
+Insurance share of {0} ({1}),حصة التأمين من {0} ({1})
+Insurer Journal Entry,قيد شركة التأمين
+Insurer Pays,شركة التأمين تدفع
+Insurer Pays %,نسبة تحمل التأمين
+Insurer Pays % must be between 0 and 100,نسبة تحمل التأمين لازم تكون بين 0 و 100
+Invoices,الفواتير
+Item,بند
+Item Name,اسم الصنف
+Item {0} does not exist,الصنف {0} غير موجود
+Item {0} has no conversion from {1} to {2},الصنف {0} ليس له تحويل من {1} إلى {2}
+Item {0} is disabled,الصنف {0} معطل
+Item {0} is not a stock item,الصنف {0} ليس صنف مخزني
+Items,الأصناف
+Keep Refrigerated,يُحفظ في الثلاجة
+Last Dispensed,آخر صرف
+Last Reminded,آخر تذكير
+Least the Patient Pays per Visit,أقل مبلغ يدفعه المريض في الزيارة
+Leave empty to take the batch that expires first.,اتركه فاضي لأخذ التشغيلة الأقرب انتهاءً.
+Leave empty to take the whole patient share.,اتركه فاضي لأخذ كامل حصة المريض.
+Leave empty to use the public price list.,اتركه فاضي لاستخدام قائمة سعر الجمهور.
+Leave empty when medicines are exempt.,اتركه فاضي لو الأدوية معفاة.
+License Valid Until,الترخيص ساري حتى
+License and Contact,الترخيص والتواصل
+Load Needs,تحميل الاحتياجات
+Loaded,تم التحميل
+Manager User,مستخدم المدير
+Manufacturer,الشركة المصنعة
+Margin,الهامش
+Margin %,الهامش %
+Medical Supply,مستلزمات طبية
+Medicine,الدواء
+Member No.,رقم العضوية
+Minimum Quantity,الكمية الدنيا
+Most the Patient Pays per Visit,أقصى مبلغ يدفعه المريض في الزيارة
+Move to Expired Stock,نقل إلى مخزن المنتهي
+National ID,الرقم القومي
+Near Expiry,قرب الانتهاء
+Near Expiry (days),قرب الانتهاء (يوم)
+Needs,الاحتياجات
+Needs Action,يحتاج إجراء
+"Needs are counted for {0} (sales of the last {1} days, covering {2} days). Check the quantities and suppliers, then create the purchase orders.",الاحتياجات محسوبة لـ {0} (مبيعات آخر {1} يوم، وتغطية {2} يوم). راجع الكميات والموردين ثم أنشئ أوامر الشراء.
+Next Refill Due,موعد الصرف القادم
+No item has barcode {0},لا يوجد صنف بالباركود {0}
+No purchase price yet: enter the cost,لا يوجد سعر شراء بعد: أدخل التكلفة
+No supplier: choose one,لا يوجد مورد: اختار واحد
+Not Started,لم يبدأ
+Not enough stock in {0}: {1},المخزون غير كافي في {0}: {1}
+Not enough usable stock in {0} (expired batches are never sold): {1},لا يوجد مخزون صالح كافي في {0} (التشغيلات المنتهية لا تُباع): {1}
+Note,ملاحظة
+Notes,ملاحظات
+Nothing is ticked to order,لم يتم تحديد أي شيء للطلب
+Nothing to add,لا يوجد شيء للإضافة
+OTC,بدون روشتة
+Offer Used,العرض المستخدم
+Official public prices live here. The price typed on an item is kept in this list.,أسعار الجمهور الرسمية تُحفظ هنا. السعر المكتوب على الصنف بيتخزن في هذه القائمة.
+Ointment,مرهم
+On Order,قيد الطلب
+Only What Is in Stock,المتوفر فقط
+Order,الأمر
+Order Quantity,كمية الطلب
+Ordered,تم الطلب
+Orders were already created from this plan,تم إنشاء أوامر الشراء من هذه الخطة بالفعل
+Other,أخرى
+Over 90 days,أكثر من 90 يوم
+Overdue,متأخر
+Paid in Advance,مدفوع مقدماً
+Patient,المريض
+Patient / Customer,المريض / العميل
+Patient National ID,الرقم القومي للمريض
+Patient Paid Now,المريض دفع الآن
+Patient Pays,المريض يدفع
+Payment Days,أيام السداد
+Payment Entry,قيد دفع
+Payment Method,طريقة الدفع
+Pharmacy,الصيدلية
+Pharmacy Branch,فرع صيدلية
+Pharmacy Class,تصنيف الصيدلية
+Pharmacy Dispense,صرف صيدلية
+Pharmacy License No.,رقم ترخيص الصيدلية
+Pharmacy Product,منتج صيدلي
+Pharmacy Purchase Plan,خطة شراء الصيدلية
+Pharmacy Settings,إعدادات الصيدلية
+Pharmacy Transfer,تحويل صيدلية
+Pharmacy dispense {0},صرف صيدلية {0}
+Pharmacy transfer {0},تحويل صيدلية {0}
+Phone,الهاتف
+Plan,خطة
+Plan Branch,فرع الخطة
+Plan Name,اسم الخطة
+Prescription,الروشتة
+Prescription No.,رقم الروشتة
+Price Difference,فرق السعر
+Price List,قائمة الأسعار
+Price List Override,قائمة أسعار بديلة
+Price per Unit,السعر للوحدة
+Public Price,سعر الجمهور
+Public Price List,قائمة سعر الجمهور
+Purchase Order,أمر شراء
+Purchase Orders Created,أوامر الشراء المنشأة
+Purchase Plan Row,صف خطة الشراء
+Purchase Plans to Order,خطط شراء تنتظر الطلب
+Purchase Receipt,إيصال استلام
+Purchasing,المشتريات
+Quantity,الكمية
+Quantity per Refill,الكمية في كل صرف
+Quantity per refill must be more than zero,الكمية في كل صرف لازم تكون أكبر من صفر
+Reason,السبب
+Refill Plan,خطة صرف دوري
+Refill Plans by Status,خطط الصرف الدوري حسب الحالة
+Refill due {0}: {1} - {2},موعد صرف {0}: {1} - {2}
+Refills Due,الصرف المستحق
+Refills Due Soon,صرف مستحق قريباً
+Refills Overdue,صرف متأخر
+Remind This Many Days Before a Refill Is Due,ذكّر قبل موعد الصرف بعدد أيام
+Reports,التقارير
+Result,النتيجة
+Row {0}: batch {1} belongs to another item,الصف {0}: التشغيلة {1} تخص صنف آخر
+Row {0}: choose a supplier,الصف {0}: اختار مورد
+Row {0}: choose the batch to move or write off,الصف {0}: اختار التشغيلة المراد نقلها أو إعدامها
+Row {0}: discount must be between 0 and 100,الصف {0}: الخصم لازم يكون بين 0 و 100
+Row {0}: quantity and cost must be more than zero,الصف {0}: الكمية والتكلفة لازم يكونوا أكبر من صفر
+Row {0}: quantity must be more than zero,الصف {0}: الكمية لازم تكون أكبر من صفر
+Row {0}: {1} has no public price,الصف {0}: {1} ليس له سعر جمهور
+Sachet,أكياس
+Sales,المبيعات
+Sales Invoice,فاتورة مبيعات
+Sales Taxes Template,قالب ضريبة المبيعات
+Sales Today,مبيعات اليوم
+Sales by Branch,المبيعات حسب الفرع
+Scan Barcode,مسح الباركود
+Scan the pack to add the item.,امسح العبوة لإضافة الصنف.
+Sellable (not expired),قابل للبيع (غير منتهي)
+Set an expired stock warehouse on branch {0} first,حدد مخزن المنتهي في الفرع {0} أولاً
+Set the stock adjustment account on company {0},حدد حساب تسوية المخزون في الشركة {0}
+Setup,الإعداد
+Show Cancelled,إظهار الملغي
+Sold per Day,المباع يومياً
+Source,المصدر
+Source Data,بيانات المصدر
+Spray,بخاخ
+Start Date,تاريخ البدء
+Status,الحالة
+Stock,المخزون
+Stock Entry,حركة مخزون
+Stock Warehouse,مخزن البيع
+Stock and sales of these branches (and the receiving store) are counted together. Empty = every active branch.,مخزون ومبيعات هذه الفروع (ومخزن الاستلام) بتتحسب معاً. فاضي = كل الفروع النشطة.
+Stopped,متوقف
+Strength,التركيز
+Supplement,مكمل غذائي
+Supplier,المورد
+Supplier / Company,المورد / الشركة
+Supplier Offer,عرض مورد
+Suppository,لبوس
+Suspension,معلق
+Syrup,شراب
+Tablet,أقراص
+The amount received cannot be more than what the patient pays ({0}),المبلغ المستلم لا يمكن أن يزيد عن حصة المريض ({0})
+The customer that carries what this insurer owes us. Created automatically when left empty.,العميل اللي بيحمل مديونية شركة التأمين. بيتنشأ تلقائياً لو تُرك فاضي.
+The expired stock warehouse must be different from the sales warehouse,مخزن المنتهي لازم يختلف عن مخزن البيع
+"The invoice prices do not match the dispense prices. Check pricing rules and the price list, then try again.",أسعار الفاتورة لا تطابق أسعار الصرف. راجع قواعد التسعير وقائمة الأسعار ثم حاول مرة أخرى.
+The license of this branch has expired,ترخيص هذا الفرع منتهي
+The main store that supplies the other branches.,المخزن الرئيسي الذي يورّد للفروع الأخرى.
+The official price printed on the pack. Kept in the public price list.,السعر الرسمي المطبوع على العبوة. يُحفظ في قائمة سعر الجمهور.
+The two branches must be different,الفرعين لازم يكونوا مختلفين
+To,إلى
+To Branch,إلى فرع
+Total,الإجمالي
+Total Owed,إجمالي المستحق
+Totals,الإجماليات
+Transfer Item,صنف محوّل
+Transfers to Submit,تحويلات تنتظر الاعتماد
+Turns on batch and expiry tracking.,يفعّل تتبع التشغيلات والصلاحية.
+Type,النوع
+Unit,وحدة
+Units in Stock Unit,الوحدات في وحدة المخزون
+"Units received, free units included.",الوحدات المستلمة بما فيها المجانية.
+Upcoming,قادم
+Used when a sale has no patient.,يُستخدم عندما لا يكون للبيع مريض.
+Usual Branch,الفرع المعتاد
+Usual Payment Days,أيام السداد المعتادة
+Usually the central store.,غالباً المخزن المركزي.
+Valid From,صالح من
+Valid From is after Valid Until,تاريخ البداية بعد تاريخ النهاية
+Valid Until,ساري حتى
+Validity,الصلاحية
+Walk-in Customer,عميل نقدي
+Warehouse,المخزن
+Warehouse {0} already belongs to branch {1},المخزن {0} تابع بالفعل للفرع {1}
+Warehouse {0} does not belong to {1},المخزن {0} لا يتبع {1}
+Where expired or damaged stock is moved.,مكان نقل المخزون المنتهي أو التالف.
+Where this branch keeps sellable stock.,مكان مخزون هذا الفرع القابل للبيع.
+Write Off,إعدام
+"{0} is a controlled drug: prescription number, doctor and patient ID are required.",{0} دواء مراقب: مطلوب رقم الروشتة والطبيب والرقم القومي للمريض.
+{0} items need ordering,{0} صنف يحتاج طلب
+{0}: nearest expiry {1} ({2} days left). Sellable: {3},{0}: أقرب صلاحية {1} (باقي {2} يوم). القابل للبيع: {3}
+{0}: nothing sellable in this branch (expired stock is never sold).,{0}: لا يوجد قابل للبيع في هذا الفرع (المنتهي لا يُباع).
+{0}: sellable {1},{0}: قابل للبيع {1}
+{0}: {1} expired batches and {2} expiring within {3} days. Open the Expiry report.,{0}: {1} تشغيلة منتهية و{2} تنتهي خلال {3} يوم. افتح تقرير الصلاحية.

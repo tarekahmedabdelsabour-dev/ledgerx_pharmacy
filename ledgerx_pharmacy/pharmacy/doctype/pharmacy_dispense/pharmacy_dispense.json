@@ -1,0 +1,276 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "posting_date",
+  "customer",
+  "patient_id",
+  "cb1",
+  "insurance_plan",
+  "member_no",
+  "approval_no",
+  "sb_rx",
+  "prescription_no",
+  "cb2",
+  "doctor",
+  "sb_items",
+  "scan_barcode",
+  "items",
+  "sb_tot",
+  "gross_total",
+  "insurer_share",
+  "patient_share",
+  "cb3",
+  "mode_of_payment",
+  "amount_received",
+  "sb_links",
+  "sales_invoice",
+  "payment_entry",
+  "insurer_entry",
+  "company",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Pharmacy Branch",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Patient / Customer",
+   "options": "Customer",
+   "in_standard_filter": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "patient_id",
+   "fieldtype": "Data",
+   "label": "Patient National ID",
+   "fetch_from": "customer.ph_national_id",
+   "fetch_if_empty": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance_plan",
+   "fieldtype": "Link",
+   "label": "Insurance Plan",
+   "options": "Insurance Plan",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "member_no",
+   "fieldtype": "Data",
+   "label": "Member No."
+  },
+  {
+   "fieldname": "approval_no",
+   "fieldtype": "Data",
+   "label": "Approval No."
+  },
+  {
+   "fieldname": "sb_rx",
+   "fieldtype": "Section Break",
+   "label": "Prescription"
+  },
+  {
+   "fieldname": "prescription_no",
+   "fieldtype": "Data",
+   "label": "Prescription No."
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Data",
+   "label": "Doctor"
+  },
+  {
+   "fieldname": "sb_items",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "scan_barcode",
+   "fieldtype": "Data",
+   "label": "Scan Barcode",
+   "no_copy": 1,
+   "description": "Scan the pack to add the item."
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Dispense Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_tot",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "gross_total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "insurer_share",
+   "fieldtype": "Currency",
+   "label": "Insurer Pays",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_share",
+   "fieldtype": "Currency",
+   "label": "Patient Pays",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Payment Method",
+   "options": "Mode of Payment",
+   "default": "Cash"
+  },
+  {
+   "fieldname": "amount_received",
+   "fieldtype": "Currency",
+   "label": "Patient Paid Now",
+   "description": "Leave empty to take the whole patient share."
+  },
+  {
+   "fieldname": "sb_links",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Link",
+   "label": "Payment Entry",
+   "options": "Payment Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "insurer_entry",
+   "fieldtype": "Link",
+   "label": "Insurer Journal Entry",
+   "options": "Journal Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "fetch_from": "branch.company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Pharmacy Dispense",
+   "read_only": 1,
+   "no_copy": 1,
+   "print_hide": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Pharmacy Dispense",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  },
+  {
+   "role": "Pharmacy Assistant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:DSP-.YYYY.-.#####",
+ "title_field": "customer",
+ "icon": "fa fa-plus-square",
+ "is_submittable": 1,
+ "track_changes": 1,
+ "allow_rename": 0
+}

@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "transfer_type",
+  "posting_date",
+  "cb1",
+  "from_branch",
+  "to_branch",
+  "sb_items",
+  "items",
+  "sb_more",
+  "reason",
+  "stock_entry",
+  "company",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "transfer_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Branch Transfer\nMove to Expired Stock\nWrite Off",
+   "default": "Branch Transfer",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_branch",
+   "fieldtype": "Link",
+   "label": "From Branch",
+   "options": "Pharmacy Branch",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "to_branch",
+   "fieldtype": "Link",
+   "label": "To Branch",
+   "options": "Pharmacy Branch",
+   "depends_on": "eval:doc.transfer_type=='Branch Transfer'",
+   "mandatory_depends_on": "eval:doc.transfer_type=='Branch Transfer'"
+  },
+  {
+   "fieldname": "sb_items",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Transfer Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_more",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "fetch_from": "from_branch.company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Pharmacy Transfer",
+   "read_only": 1,
+   "no_copy": 1,
+   "print_hide": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Pharmacy Transfer",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  },
+  {
+   "role": "Pharmacy Assistant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1
+  },
+  {
+   "role": "Pharmacy Buyer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:PTR-.YYYY.-.#####",
+ "icon": "fa fa-exchange",
+ "is_submittable": 1,
+ "track_changes": 1,
+ "allow_rename": 0
+}

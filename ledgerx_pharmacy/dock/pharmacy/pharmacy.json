@@ -1,0 +1,22 @@
+{
+ "app": "ledgerx_pharmacy",
+ "creation": "2026-11-21 09:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Dock",
+ "idx": 0,
+ "items": [
+  {
+   "added": 0,
+   "hidden": 0,
+   "icon": "pill",
+   "link_to": "Pharmacy",
+   "link_type": "Sidebar",
+   "title": "Pharmacy"
+  }
+ ],
+ "modified": "2026-11-21 09:00:00.000000",
+ "modified_by": "Administrator",
+ "name": "pharmacy",
+ "owner": "Administrator",
+ "standard": 1
+}

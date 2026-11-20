@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "creation": "2026-11-21 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "item_code",
+  "item_name",
+  "price",
+  "discount_pct",
+  "cb1",
+  "min_qty",
+  "bonus_per",
+  "bonus_qty",
+  "sb_v",
+  "valid_from",
+  "valid_to",
+  "payment_days",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier / Company",
+   "options": "Supplier",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1,
+   "fetch_from": "item_code.item_name"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price per Unit",
+   "in_list_view": 1,
+   "description": "0 = the item's last purchase price."
+  },
+  {
+   "fieldname": "discount_pct",
+   "fieldtype": "Percent",
+   "label": "Discount %",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min_qty",
+   "fieldtype": "Float",
+   "label": "Minimum Quantity"
+  },
+  {
+   "fieldname": "bonus_per",
+   "fieldtype": "Float",
+   "label": "For Every (units bought)",
+   "description": "Example: buy 10 ..."
+  },
+  {
+   "fieldname": "bonus_qty",
+   "fieldtype": "Float",
+   "label": "Get Free (units)",
+   "description": "... get 1 free."
+  },
+  {
+   "fieldname": "sb_v",
+   "fieldtype": "Section Break",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "label": "Valid Until",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "payment_days",
+   "fieldtype": "Int",
+   "label": "Payment Days"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-21 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Supplier Offer",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Pharmacy Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Pharmacy Buyer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:OFR-.#####",
+ "icon": "fa fa-percent",
+ "allow_rename": 0
+}
