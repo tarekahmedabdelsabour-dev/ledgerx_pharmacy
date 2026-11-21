@@ -111,6 +111,21 @@
 		},
 	});
 
+	// Decision analysis from the branch: opens the Operations Research plans filled with this branch
+	frappe.ui.form.on("Pharmacy Branch", {
+		refresh(frm) {
+			if (frm.is_new()) return;
+			if (frappe.model.can_create("Reorder Plan")) {
+				frm.add_custom_button(__("Reorder Plan for This Branch"), () =>
+					frappe.new_doc("Reorder Plan", { company: frm.doc.company, warehouse: frm.doc.warehouse }), __("Analysis"));
+			}
+			if (frappe.model.can_create("Distribution Plan")) {
+				frm.add_custom_button(__("Distribution Plan for Branch Needs"), () =>
+					frappe.new_doc("Distribution Plan", { company: frm.doc.company, include_branch_needs: 1 }), __("Analysis"));
+			}
+		},
+	});
+
 	frappe.ui.form.on("Pharmacy Purchase Plan", {
 		refresh(frm) {
 			if (frm.is_new()) return;

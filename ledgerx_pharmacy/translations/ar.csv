@@ -323,3 +323,6 @@ Write Off,إعدام
 {0}: nothing sellable in this branch (expired stock is never sold).,{0}: لا يوجد قابل للبيع في هذا الفرع (المنتهي لا يُباع).
 {0}: sellable {1},{0}: قابل للبيع {1}
 {0}: {1} expired batches and {2} expiring within {3} days. Open the Expiry report.,{0}: {1} تشغيلة منتهية و{2} تنتهي خلال {3} يوم. افتح تقرير الصلاحية.
+Analysis,تحليل
+Reorder Plan for This Branch,خطة إعادة الطلب لهذا الفرع
+Distribution Plan for Branch Needs,خطة توزيع لاحتياج الفروع
