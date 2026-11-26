@@ -304,8 +304,8 @@ def build():
 		for k in ("autoname", "title_field", "icon", "track_changes", "issingle", "istable", "show_title_field_in_link", "search_fields", "is_submittable"):
 			if k in d:
 				out[k] = d[k]
-		if name in ("Pharmacy Dispense", "Pharmacy Transfer", "Pharmacy Purchase Plan", "Refill Plan", "Insurance Plan", "Pharmacy Branch"):
-			out["track_changes"] = 1
+		if not istable:
+			out["track_changes"] = 1  # who changed what, when
 		if "autoname" not in d and not istable and not d.get("issingle"):
 			out["autoname"] = "hash"
 		out["allow_rename"] = 0

@@ -81,5 +81,6 @@
  "autoname": "field:ingredient_name",
  "icon": "fa fa-flask",
  "search_fields": "ingredient_name",
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }
