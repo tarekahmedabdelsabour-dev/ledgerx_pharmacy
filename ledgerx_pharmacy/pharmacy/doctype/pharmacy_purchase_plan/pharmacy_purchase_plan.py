@@ -26,9 +26,10 @@ class PharmacyPurchasePlan(Document):
 			rows.append(frappe._dict(name=recv.name, warehouse=recv.warehouse, company=recv.company))
 		return rows
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def load_needs(self):
 		"""Counts stock, orders and sales of the chosen branches and proposes what to buy and from whom."""
+		self.check_permission("write")
 		if self.status == "Ordered":
 			frappe.throw(_("Orders were already created from this plan"))
 		self.check_permission("write")
@@ -74,7 +75,7 @@ class PharmacyPurchasePlan(Document):
 		self.save()
 		return len(self.rows)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def create_orders(self):
 		"""One draft purchase order per supplier for the rows that are ticked."""
 		self.check_permission("write")
