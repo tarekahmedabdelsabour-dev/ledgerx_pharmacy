@@ -67,6 +67,8 @@ doctype("Pharmacy Settings", [
 	f("critical_expiry_days", "Int", "Critical Expiry (days)", default=30),
 	f("near_expiry_days", "Int", "Near Expiry (days)", default=90),
 	f("min_days_to_sell", "Int", "Do Not Sell With Fewer Days Left Than", default=0, description="0 = only expired batches are blocked."),
+	sec("sb_disc", "Pricing Control"),
+	f("max_discount_pct", "Percent", "Maximum Discount for Pharmacists and Assistants (%)", default=10, description="A manager can go higher. Prices are always the public price unless a manager changes them."),
 	sec("sb_ctrl", "Controlled Drugs"),
 	f("controlled_needs_prescription", "Check", "Controlled Drugs Need a Prescription Number, Doctor and Patient ID", default=1),
 	sec("sb_buy", "Purchasing"),
@@ -168,7 +170,7 @@ doctype("Pharmacy Dispense", [
 	f("company", "Link", "Company", options="Company", read_only=1, fetch_from="branch.company"),
 	f("amended_from", "Link", "Amended From", options="Pharmacy Dispense", read_only=1, no_copy=1, print_hide=1),
 ], autoname="format:DSP-.YYYY.-.#####", is_submittable=1, title_field="customer", icon="fa fa-plus-square",
-	perms=perms((MGR, "full"), (PH, "full"), (ASST, "sub")))
+	perms=perms((MGR, "full"), (PH, "sub"), (ASST, "sub")))
 
 # ------------------------------------------------------------------ transfers
 doctype("Transfer Item", [

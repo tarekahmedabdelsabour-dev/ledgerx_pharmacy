@@ -12,6 +12,8 @@
   "critical_expiry_days",
   "near_expiry_days",
   "min_days_to_sell",
+  "sb_disc",
+  "max_discount_pct",
   "sb_ctrl",
   "controlled_needs_prescription",
   "sb_buy",
@@ -71,6 +73,18 @@
    "label": "Do Not Sell With Fewer Days Left Than",
    "default": 0,
    "description": "0 = only expired batches are blocked."
+  },
+  {
+   "fieldname": "sb_disc",
+   "fieldtype": "Section Break",
+   "label": "Pricing Control"
+  },
+  {
+   "fieldname": "max_discount_pct",
+   "fieldtype": "Percent",
+   "label": "Maximum Discount for Pharmacists and Assistants (%)",
+   "default": 10,
+   "description": "A manager can go higher. Prices are always the public price unless a manager changes them."
   },
   {
    "fieldname": "sb_ctrl",
@@ -157,6 +171,6 @@
  ],
  "icon": "fa fa-medkit",
  "issingle": 1,
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

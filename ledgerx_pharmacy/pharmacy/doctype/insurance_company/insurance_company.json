@@ -102,6 +102,6 @@
  ],
  "autoname": "field:company_name",
  "icon": "fa fa-shield",
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

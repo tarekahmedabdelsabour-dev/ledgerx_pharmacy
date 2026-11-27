@@ -28,6 +28,7 @@ class PharmacyDispense(Document):
 				frappe.throw(_("Insurance company {0} is not active").format(plan.insurance_company))
 		if not self.items:
 			frappe.throw(_("Add at least one item"))
+		privileged = bool(set(frappe.get_roles()) & {"Pharmacy Manager", "System Manager"}) or frappe.session.user == "Administrator"
 		for r in self.items:
 			info = data.item_info(r.item_code)
 			if info.disabled:
@@ -41,12 +42,15 @@ class PharmacyDispense(Document):
 			r.conversion_factor = data.conversion_factor(r.item_code, r.uom)
 			r.klass = info.ph_class
 			r.is_controlled = info.controlled
-			if not flt(r.price):
-				r.price = data.public_price(r.item_code, self.branch, r.uom)
+			public = data.public_price(r.item_code, self.branch, r.uom)
+			if not flt(r.price) or not privileged:
+				r.price = public
 			if not flt(r.price):
 				frappe.throw(_("Row {0}: {1} has no public price").format(r.idx, r.item_code))
 			if flt(r.discount_pct) < 0 or flt(r.discount_pct) > 100:
 				frappe.throw(_("Row {0}: discount must be between 0 and 100").format(r.idx))
+			if not privileged and flt(r.discount_pct) > flt(data.settings().max_discount_pct) + 1e-9:
+				frappe.throw(_("Row {0}: a discount above {1}% needs a pharmacy manager").format(r.idx, flt(data.settings().max_discount_pct)), frappe.PermissionError)
 			r.amount = line_amount(r.price, r.qty, r.discount_pct)
 			if plan and plan.exclude_cosmetics and r.klass in ("Cosmetic", "Supplement"):
 				r.covered = 0
@@ -74,6 +78,8 @@ class PharmacyDispense(Document):
 		branch = data.branch_doc(self.branch)
 		wh = branch.warehouse
 		self._plan = []  # (row, [(batch, stock_qty)])
+		for code in sorted({r.item_code for r in self.items}):
+			frappe.db.sql("SELECT name FROM `tabBin` WHERE item_code = %s AND warehouse = %s FOR UPDATE", (code, wh))
 		short, used = [], {}
 		for r in self.items:
 			need = flt(r.qty) * flt(r.conversion_factor)

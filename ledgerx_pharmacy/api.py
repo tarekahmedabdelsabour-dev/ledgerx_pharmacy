@@ -48,6 +48,7 @@ def item_by_barcode(code):
 @frappe.whitelist()
 def split_preview(items, plan=None):
 	"""What the patient and the insurer will each pay: the same arithmetic the submitted sale uses."""
+	frappe.has_permission("Pharmacy Dispense", "create", throw=True)
 	items = json.loads(items) if isinstance(items, str) else items
 	lines = []
 	for r in items:

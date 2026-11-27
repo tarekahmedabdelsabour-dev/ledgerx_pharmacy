@@ -241,10 +241,7 @@
    "export": 1,
    "write": 1,
    "create": 1,
-   "delete": 1,
-   "submit": 1,
-   "cancel": 1,
-   "amend": 1
+   "submit": 1
   },
   {
    "role": "Pharmacy Assistant",
